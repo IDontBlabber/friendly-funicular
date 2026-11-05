@@ -1049,9 +1049,9 @@ h3,h4,.cd h3,.mv h3,.vlist h3,.wp h3,.fm h3{font-weight:400;letter-spacing:.06em
 .pg{display:grid;gap:14px}
 .pg-stage{position:relative;border-radius:14px;overflow:hidden;background:var(--sand);aspect-ratio:16/9;max-height:min(74vh,720px);width:100%}
 .pg-main{display:block;width:100%;height:100%;padding:0;cursor:zoom-in}
-.pg-main img{width:100%;height:100%;object-fit:cover;transition:opacity .45s var(--ease),transform 1.2s var(--ease)}
-.pg-main img.sw{opacity:0;transform:scale(1.02)}
-.pg-main:hover img{transform:scale(1.015)}
+.pg-main img{width:100%;height:100%;object-fit:contain;transition:opacity .45s var(--ease),transform 1.2s var(--ease)}
+.pg-main img.sw{opacity:0}
+.pg-main:hover img{transform:none}
 .pg-nav{position:absolute;top:50%;margin-top:-26px;z-index:3;background:rgba(255,255,255,.7);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-color:rgba(255,255,255,.6);color:var(--ink)}
 .pg-nav:hover{background:#fff;color:var(--ink);border-color:#fff}
 .pg-prev{left:18px}.pg-next{right:18px}
@@ -1059,7 +1059,7 @@ h3,h4,.cd h3,.mv h3,.vlist h3,.wp h3,.fm h3{font-weight:400;letter-spacing:.06em
 .pg-zoom{z-index:3;left:18px;top:18px;pointer-events:none}
 .pg-thumbs{display:flex;gap:10px;overflow-x:auto;scrollbar-width:thin;padding:4px 4px 8px;scroll-snap-type:x proximity}
 .pg-t{flex:0 0 auto;width:clamp(96px,9vw,132px);aspect-ratio:3/2;border-radius:8px;overflow:hidden;padding:0;opacity:.55;outline:2px solid transparent;outline-offset:2px;transition:opacity .3s,outline-color .3s;scroll-snap-align:center}
-.pg-t img{width:100%;height:100%;object-fit:cover}
+.pg-t{background:var(--sand)}.pg-t img{width:100%;height:100%;object-fit:contain}
 .pg-t:hover{opacity:.85}
 .pg-t.on{opacity:1;outline-color:var(--gold)}
 @media(max-width:640px){.pg-stage{aspect-ratio:4/3}.pg-nav{width:44px;height:44px;margin-top:-22px}.pg-prev{left:10px}.pg-next{right:10px}.pg-zoom{display:none}.pg-t{width:84px}}
@@ -1130,7 +1130,7 @@ const P=[
  t:'A Premium Residential Plotted Development',tag:'City Within Reach. Nature at Your Doorstep',
  ov:['Sri Shiva Kuteera is a thoughtfully planned residential plotted development by Charigan Group, located at Soluru, Kunigal Road, near the iconic Shivagange Hill. Spread across 8.15 acres, the project offers 151 premium residential plots in a peaceful setting surrounded by natural beauty. Designed for both homeowners and investors, it offers the perfect balance of peaceful surroundings and excellent road connectivity, ideal for building your dream home or investing in the fast-growing Tumakuru corridor.','Development nearing completion, Ready for registration.'],
  am:BASIC,near:['Shivagange Hill','Shree Siddaganga Mutt','Kunigal','Soluru','Markonahalli Dam','Siddaganga Hospital & Research Centre','NH-75 (Bengaluru–Mangaluru Highway)','Kempegowda International Airport','KIADB'],
- gal:[M('3aeb7b_08821628fb3547f88e70fed6422deec0f003.jpg'),...S(['f05f953f37844abfb1545a2c75d8b8f1','2a2b57e3688446cb8268420dd5e57cad','41752dfc0c864f98a501f582e2254b3a','2a560e72e59d4583a0c725474562e130','ac116d4fe07a4b7e9e0a70e6543cf1b8','b8a533ed282c414ebfd36c0a8aea7f68','3b0cfa6857ad4199a08ff84f1181ed49','270fc5bd8c43451eba6186cbc5efc29b'])],
+ gal:[M('3aeb7b_08821628fb3547f88e70fed6422deec0f003.jpg'),...S(['f05f953f37844abfb1545a2c75d8b8f1','2a2b57e3688446cb8268420dd5e57cad','ac116d4fe07a4b7e9e0a70e6543cf1b8','3b0cfa6857ad4199a08ff84f1181ed49','270fc5bd8c43451eba6186cbc5efc29b'])],
  legal:['Crystal clear paperwork for hassle-free registration','Ready-to-construct plotted development'],
  facts:[['Project Area','8.15 Acres'],['Residential Plots','151 Premium Plots'],['Location','Soluru, Kunigal Road'],['Nearby Landmarks','Soluru, Kunigal & Shivagange Hill'],['Approval','MPA Approved RERA'],['Status','Registered']],
  about:['Where Serenity Meets Smart Living','Welcome to Sri Shiva Kuteera, an exclusive residential plotted development by Charigan Group, where peaceful living meets thoughtful planning. The project blends natural surroundings with modern infrastructure, creating an ideal environment for families and investors alike.','Whether you’re planning to build your dream home or make a smart real estate investment, the project promises comfort, convenience and long-term growth.','Build Your Future in the Lap of Nature.']}
